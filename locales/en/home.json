@@ -1,0 +1,13 @@
+{
+    "title": "Next.js Firebase MongoDB",
+    "subtitle": "Printhouse",
+    "categories": "Categories",
+    "allProducts": "All products",
+    "aboutUs": "About us",
+    "aboutUsText": "<0>Lorem ipsum dolor sit amet, consectetur <1>adipiscing elit</1>. Vestibulum cursus risus vel neque sollicitudin semper. Nunc tempus magna a enim pretium interdum. Sed mattis eu eros eu cursus. <1>Donec placerat</1>, odio sed luctus tempor, ligula nunc laoreet leo, vehicula finibus enim diam eu felis. Sed egestas dolor tellus, ac scelerisque lacus dictum ut. Duis eros lectus, <1>convallis vitae sapien vitae, euismod vulputate enim</1>. Suspendisse magna velit, semper a dapibus non, bibendum iaculis nisl. Aliquam dictum nunc bibendum nunc facilisis, quis accumsan elit lacinia. Sed faucibus vulputate justo vitae tempus. Praesent lacus ligula, porttitor in est ut, <1>mollis</1> vestibulum dolor.</0>",
+    "howTo": "How to order",
+    "selectProducts": "Select products",
+    "uploadFiles": "Upload files",
+    "pay": "Pay",
+    "ready": "Ready"
+}

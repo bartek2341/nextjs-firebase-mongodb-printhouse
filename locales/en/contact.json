@@ -1,0 +1,10 @@
+{
+    "address": "Address",
+    "subject": "Subject",
+    "message": "Message",
+    "sendMessage": "Send message",
+    "phone": "Phone",
+    "email": "Email",
+    "send": "Send",
+    "messageSent": "Message sent"
+}

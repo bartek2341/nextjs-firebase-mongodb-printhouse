@@ -1,0 +1,18 @@
+{
+    "order": "Order",
+    "price": "Price",
+    "shipping": "Shipping",
+    "recipient": "Recipient",
+    "shippingMethod": "Shipping method",
+    "availablePaymentMethods":"Available payment methods",
+    "orderPrice": "Order price",
+    "creditCard": "Credit card",
+    "pending_payment": "Pending payment",
+    "rejected": "Rejected",
+    "processing": "Processing",
+    "sent": "Sent",
+    "delivered": "Delivered",
+    "attachments": "Attachments",
+    "download": "Download",
+    "downloadFileError": "Download file error"
+}

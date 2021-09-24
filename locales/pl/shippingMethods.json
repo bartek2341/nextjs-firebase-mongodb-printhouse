@@ -1,0 +1,14 @@
+{
+    "parcelLocker": {
+        "name": "Paczkomat",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+      "courier": {
+        "name": "Kurier",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+        "personal": {
+        "name": "Odbiór osobisty",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+}

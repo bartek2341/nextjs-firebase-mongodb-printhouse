@@ -1,0 +1,10 @@
+{
+    "name": "Imię",
+    "vorname": "Nazwisko",
+    "company": "Nazwa firmy",
+    "taxId": "NIP",
+    "street": "Ulica i numer",
+    "postalCode": "Kod pocztowy",
+    "city": "Miasto",
+    "country": "Kraj"
+}

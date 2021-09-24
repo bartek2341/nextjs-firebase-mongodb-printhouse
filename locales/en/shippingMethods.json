@@ -1,0 +1,14 @@
+{
+    "parcelLocker": {
+        "name": "Parcel locker",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+      "courier": {
+        "name": "Courier",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+        "personal": {
+        "name": "Personal",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+}

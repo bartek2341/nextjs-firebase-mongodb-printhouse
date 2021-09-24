@@ -1,0 +1,18 @@
+{
+    "order": "Zamówienie",
+    "attachments": "Załączniki",
+    "shipping": "Wysyłka",
+    "recipient": "Odbiorca",
+    "price": "Cena",
+    "availablePaymentMethods":"Dostępne metody płatności",
+    "shippingMethod": "Metoda wysyłki",
+    "orderPrice": "Wartość zamówienia",
+    "creditCard": "Karta kredytowa",
+    "pending_payment": "Do zapłaty",
+    "rejected": "Odrzucone",
+    "processing": "W realizacji",
+    "sent": "Wysłane",
+    "delivered": "Dostarczone",
+    "download": "Pobierz",
+    "downloadFileError": "Nie można pobrać pliku"
+}

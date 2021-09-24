@@ -1,0 +1,26 @@
+{
+  "locales": ["en","pl"],
+  "defaultLocale": "en",
+  "localeDetection": false,
+  "pages": {
+    "*": ["common", "products"],
+    "/": ["home", "productCategories"],
+    "/contact": ["contact", "validation"],
+    "/login": ["login", "validation"],
+    "/signup": ["signup", "validation"],
+    "/reset-password": ["resetPassword", "validation"],
+    "/[product]": ["product"],
+    "/[product]/[category]": ["home", "productCategories"],
+    "/basket": ["basket", "product"],
+    "/basket/realization": ["realization", "validation", "order", "userData", "product", "shippingMethods"],
+    "/basket/realization/success": ["realization"],
+    "/basket/realization/error": ["realization"],
+    "/account": ["account","userData", "validation"],
+    "/account/delete": ["account", "validation"],
+    "/account/password": ["account", "validation"],
+    "/account/admin": ["account","validation"],
+    "/account/orders": ["account", "order","product", "shippingMethods"],
+    "/payment/success": ["payment"],
+    "/payment/error": ["payment"]
+  }
+}

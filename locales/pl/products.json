@@ -1,0 +1,30 @@
+{
+    "businessCards": {
+        "name": "Wizytówki",
+        "description": "<0>Lorem ipsum dolor sit amet, consectetur <1>adipiscing elit</1>. Vestibulum cursus risus vel neque sollicitudin semper. Nunc tempus magna a enim pretium interdum. Sed mattis eu eros eu cursus. <1>Donec placerat</1>, odio sed luctus tempor, ligula nunc laoreet leo, vehicula finibus enim diam eu felis. Sed egestas dolor tellus, ac scelerisque lacus dictum ut. Duis eros lectus, <1>convallis vitae sapien vitae, euismod vulputate enim</1>.</0>"
+    },
+    "foldedBusinessCards": {
+        "name": "Wizytówki składane",
+        "description": "<0>Lorem ipsum dolor sit amet, consectetur <1>adipiscing elit</1>. Vestibulum cursus risus vel neque sollicitudin semper. Nunc tempus magna a enim pretium interdum. Sed mattis eu eros eu cursus. <1>Donec placerat</1>, odio sed luctus tempor, ligula nunc laoreet leo, vehicula finibus enim diam eu felis. Sed egestas dolor tellus, ac scelerisque lacus dictum ut. Duis eros lectus, <1>convallis vitae sapien vitae, euismod vulputate enim</1>.</0>"
+    },
+    "leaflets": {
+        "name": "Ulotki",
+       "description": "<0>Lorem ipsum dolor sit amet, consectetur <1>adipiscing elit</1>. Vestibulum cursus risus vel neque sollicitudin semper. Nunc tempus magna a enim pretium interdum. Sed mattis eu eros eu cursus. <1>Donec placerat</1>, odio sed luctus tempor, ligula nunc laoreet leo, vehicula finibus enim diam eu felis. Sed egestas dolor tellus, ac scelerisque lacus dictum ut. Duis eros lectus, <1>convallis vitae sapien vitae, euismod vulputate enim</1>.</0>"
+    },
+    "foldedLeaflets": {
+        "name": "Ulotki składane",
+       "description": "<0>Lorem ipsum dolor sit amet, consectetur <1>adipiscing elit</1>. Vestibulum cursus risus vel neque sollicitudin semper. Nunc tempus magna a enim pretium interdum. Sed mattis eu eros eu cursus. <1>Donec placerat</1>, odio sed luctus tempor, ligula nunc laoreet leo, vehicula finibus enim diam eu felis. Sed egestas dolor tellus, ac scelerisque lacus dictum ut. Duis eros lectus, <1>convallis vitae sapien vitae, euismod vulputate enim</1>.</0>"
+    },
+    "paperBags": {
+        "name": "Torby papierowe",
+        "description": "<0>Lorem ipsum dolor sit amet, consectetur <1>adipiscing elit</1>. Vestibulum cursus risus vel neque sollicitudin semper. Nunc tempus magna a enim pretium interdum. Sed mattis eu eros eu cursus. <1>Donec placerat</1>, odio sed luctus tempor, ligula nunc laoreet leo, vehicula finibus enim diam eu felis. Sed egestas dolor tellus, ac scelerisque lacus dictum ut. Duis eros lectus, <1>convallis vitae sapien vitae, euismod vulputate enim</1>.</0>"
+    },
+    "cottonBags": {
+        "name": "Torby bawełniane",
+        "description": "<0>Lorem ipsum dolor sit amet, consectetur <1>adipiscing elit</1>. Vestibulum cursus risus vel neque sollicitudin semper. Nunc tempus magna a enim pretium interdum. Sed mattis eu eros eu cursus. <1>Donec placerat</1>, odio sed luctus tempor, ligula nunc laoreet leo, vehicula finibus enim diam eu felis. Sed egestas dolor tellus, ac scelerisque lacus dictum ut. Duis eros lectus, <1>convallis vitae sapien vitae, euismod vulputate enim</1>.</0>"
+    },
+    "briefcases": {
+        "name": "Teczki",
+       "description": "<0>Lorem ipsum dolor sit amet, consectetur <1>adipiscing elit</1>. Vestibulum cursus risus vel neque sollicitudin semper. Nunc tempus magna a enim pretium interdum. Sed mattis eu eros eu cursus. <1>Donec placerat</1>, odio sed luctus tempor, ligula nunc laoreet leo, vehicula finibus enim diam eu felis. Sed egestas dolor tellus, ac scelerisque lacus dictum ut. Duis eros lectus, <1>convallis vitae sapien vitae, euismod vulputate enim</1>.</0>"
+    }
+}

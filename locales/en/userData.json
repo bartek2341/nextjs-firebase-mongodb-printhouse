@@ -1,0 +1,10 @@
+{
+    "name": "Name",
+    "vorname": "Vorname",
+    "company": "Company",
+    "taxId": "Tax id",
+    "street": "Street",
+    "postalCode": "Postal code",
+    "city": "City",
+    "country": "Country"
+}

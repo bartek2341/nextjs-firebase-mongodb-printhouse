@@ -1,0 +1,12 @@
+{
+    "fieldRequired": "Field required",
+    "fillAllFields": "Fill all fields",
+    "invalidValue": "Invalid value",
+    "weakPassword": "Password must be at least 6 characters long",
+    "passwordNotEqual": "Passwords do not match",
+    "invalidEmail": "Invalid email",
+    "emailAlreadyInUse": "Email already in use",
+    "userNotFound": "Account doesnt exist",
+    "invalidPassword": "Invalid password",
+    "tooManyRequests": "Too many requests, try again later"
+}

@@ -1,0 +1,18 @@
+{
+    "businessCards": {
+        "name": "Wizytówki",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "leaflets": {
+        "name": "Ulotki",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "bags": {
+        "name": "Torby",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "briefcases": {
+        "name": "Teczki",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+}

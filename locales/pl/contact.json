@@ -1,0 +1,10 @@
+{
+    "address": "Adres",
+    "subject": "Temat",
+    "message": "Wiadomość",
+    "sendMessage": "Wyślij wiadomość",
+    "phone": "Tel",
+    "email": "Email",
+    "send": "Wyślij",
+    "messageSent": "Wiadomość została wysłana"
+}

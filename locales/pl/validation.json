@@ -1,0 +1,12 @@
+{
+    "fieldRequired": "Pole wymagane",
+    "fillAllFields": "Uzupełnij wszystkie pola",
+    "invalidValue": "Niepoprawna wartość",
+    "weakPassword": "Hasło musi zawierać co najmniej 6 znaków",
+    "passwordNotEqual": "Hasła nie są zgodne",
+    "invalidEmail": "Niepoprawny email",
+    "emailAlreadyInUse": "Email jest już zajęty",
+    "userNotFound": "Konto nie istnieje",
+    "invalidPassword": "Niepoprawne hasło",
+    "tooManyRequests": "Zbyt dużo zapytań, spróbuj ponownie za chwilę"
+}
