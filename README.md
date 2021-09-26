@@ -32,14 +32,15 @@ Online print house concept created with [**Next.js**](https://nextjs.org/), [**F
 1. Install project locally using npm `$ npm install`.
 2. Create [**Firebase**](https://firebase.google.com/), [**MongoDB**](https://www.mongodb.com/), [**Stripe**](https://stripe.com/) accounts and
 connect them to your project by creating __.env__ file and setting up required enviromental variables:
-#### App
+
+__App__
 * `NEXT_PUBLIC_APP_URL` - App url, for development use `http://localhost:3000`
 
-#### Mongo db
+__Mongo db__
 * `MONGODB_URI` - Mongo db connection string with username and password
 * `MONGODB_NAME` - Database name
 
-#### Firebase client
+__Firebase client__
 * `NEXT_PUBLIC_FIREBASE_API_KEY`
 * `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN`
 * `NEXT_PUBLIC_FIREBASE_PROJECT_ID`
@@ -47,15 +48,53 @@ connect them to your project by creating __.env__ file and setting up required e
 * `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID`
 * `NEXT_PUBLIC_FIREBASE_APP_ID`
 
-#### Firebase admin
+__Firebase admin__
 * `FIREBASE_CLIENT_EMAIL`
 * `FIREBASE_PRIVATE_KEY`
 * `FIREBASE_DB_URL`
 
-#### Stripe
+__Stripe__
 * `NEXT_PUBLIC_STRIPE`
 * `STRIPE_SECRET`
 * `WEBHOOK_SECRET` Stripe webhook secret to validate webook attempts.
+
+___
+4. Setp up firebase rules.
+* __Firestore database__:
+```
+rules_version = "2"
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid} {
+    allow read, write: if isLoggedIn() && isContentOwner(uid);
+    }
+  }
+  function isLoggedIn() {
+  	return request.auth != null
+  }
+  function isContentOwner(uid) {
+    return request.auth.uid == uid
+  }
+}
+```
+* __Firebase storage__:
+```
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /userFiles/{uid}/{orderId}/{file} {
+      allow read: if isLoggedIn() && isContentOwner(uid);
+    }
+  }
+}
+function isLoggedIn() {
+  return request.auth != null
+}
+function isContentOwner(uid) {
+  return request.auth.uid == uid
+}
+```
+
 3. Create in database following collections: `products`, `productCategories`, `productPrices` and `shippings` by uncommenting the code in __pages/index.js__ file: 
 ```
 // import productsColl from "@/mongodb/collections/products";
@@ -77,9 +116,9 @@ and
 
 After saving the changes and refreshing the page, collections should be successfully created in your mongodb. You can delete commented code above and the entire folder `mongodb/collections`.
 
-4. Start project using `npm run dev`.
+5. Start project using `npm run dev`.
 
-5. Set up stripe webhooks.
+6. Set up stripe webhooks.
 * __Locally__: To listen stripe webhhook events locally you need to install [**Stripe CLI**](https://github.com/stripe/stripe-cli/releases/tag/v1.7.3) on your computer and run unzipped `.exe` file
 from your terminal, then use `stripe login` command to login your stripe account and `stripe listen --forward-to localhost:3000/api/payment` to listen webhhok events.
 * __Production__: Add webhook endpoint in your stripe account (developer tab) and listen for `payment_intent.succeeded` event.
