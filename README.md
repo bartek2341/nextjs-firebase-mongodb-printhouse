@@ -1,6 +1,6 @@
-# Nextjs Mongodb Firebase - Printhouse
+# Nextjs Firebase Mongodb - Printhouse
 
-Online print house concept created with [**Next.js**](https://nextjs.org/), [**Firebase**](https://firebase.google.com/) and [**MongoDB**](https://www.mongodb.com/)
+Online print house concept created with [**Next.js**](https://nextjs.org/), [**Firebase**](https://firebase.google.com/) and [**MongoDB**](https://www.mongodb.com/).
 
 :rocket: [**Live Demo**](https://nextjs-firebase-mongodb-printhouse.vercel.app/)
 
@@ -77,17 +77,17 @@ and
 
 After saving the changes and refreshing the page, collections should be successfully created in your mongodb. You can delete commented code above and the entire folder `mongodb/collections`.
 
-4. `npm run dev`.
+4. Start project using `npm run dev`.
 
 5. Set up stripe webhooks.
 * __Locally__: To listen stripe webhhook events locally you need to install [**Stripe CLI**](https://github.com/stripe/stripe-cli/releases/tag/v1.7.3) on your computer and run unzipped `.exe` file
-from your terminal, then run `stripe login` to login your stripe account and `stripe listen --forward-to localhost:3000/api/payment` to listen webhhok events.
+from your terminal, then use `stripe login` command to login your stripe account and `stripe listen --forward-to localhost:3000/api/payment` to listen webhhok events.
 * __Production__: Add webhook endpoint in your stripe account (developer tab) and listen for `payment_intent.succeeded` event.
 
 ## Note
 * all users have ability to add **admin** claims to thier accounts.
 * admin can update/delete and __view other users orders__ (so dont use your private informations and files in this project).
-* admin cannot __download__ other users files, only thier __owners__ can (in order details).
+* admin cannot __download__ other users order files, only thier __owners__ can (in order details).
 * all products informations and prices are random.
 * create order __limit__ 5/15 min.
 
