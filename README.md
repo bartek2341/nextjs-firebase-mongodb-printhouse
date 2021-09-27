@@ -58,7 +58,27 @@ __Stripe__
 * `STRIPE_SECRET`
 * `WEBHOOK_SECRET` Stripe webhook secret to validate webook attempts.
 
-___
+3. Create in database following collections: `products`, `productCategories`, `productPrices` and `shippings` by uncommenting the code in __pages/index.js__ file: 
+```
+// import productsColl from "@/mongodb/collections/products";
+// import productCategoriesColl from "@/mongodb/collections/productCategories";
+// import productPricesColl from "@/mongodb/collections/productPrices";
+// import shippingsColl from "@/mongodb/collections/shippings";
+```
+and
+```
+// try {
+//   await db.collection("products").insert(productsColl);
+//   await db.collection("productCategories").insert(productCategoriesColl);
+//   await db.collection("productPrices").insert(productPricesColl);
+//   await db.collection("shippings").insert(shippingsColl);
+// } catch (err) {
+//   console.log(err, "error creating collections");
+// }
+```
+
+After saving the changes and refreshing the page, collections should be successfully created in your mongodb. You can delete commented code above and the entire folder `mongodb/collections`.
+
 4. Setp up firebase rules.
 * __Firestore database__:
 ```
@@ -95,33 +115,12 @@ function isContentOwner(uid) {
 }
 ```
 
-3. Create in database following collections: `products`, `productCategories`, `productPrices` and `shippings` by uncommenting the code in __pages/index.js__ file: 
-```
-// import productsColl from "@/mongodb/collections/products";
-// import productCategoriesColl from "@/mongodb/collections/productCategories";
-// import productPricesColl from "@/mongodb/collections/productPrices";
-// import shippingsColl from "@/mongodb/collections/shippings";
-```
-and
-```
-// try {
-//   await db.collection("products").insert(productsColl);
-//   await db.collection("productCategories").insert(productCategoriesColl);
-//   await db.collection("productPrices").insert(productPricesColl);
-//   await db.collection("shippings").insert(shippingsColl);
-// } catch (err) {
-//   console.log(err, "error creating collections");
-// }
-```
-
-After saving the changes and refreshing the page, collections should be successfully created in your mongodb. You can delete commented code above and the entire folder `mongodb/collections`.
-
 5. Start project using `npm run dev`.
 
 6. Set up stripe webhooks.
 * __Locally__: To listen stripe webhhook events locally you need to install [**Stripe CLI**](https://github.com/stripe/stripe-cli/releases/tag/v1.7.3) on your computer and run unzipped `.exe` file
 from your terminal, then use `stripe login` command to login your stripe account and `stripe listen --forward-to localhost:3000/api/payment` to listen webhhok events.
-* __Production__: Add webhook endpoint in your stripe account (developer tab) and listen for `payment_intent.succeeded` event.
+* __Production__: Add webhook endpoint in your stripe account (`www.yourdomain.com/api/payment`) and listen for `payment_intent.succeeded` event.
 
 ## Note
 * all users have ability to add **admin** claims to thier accounts.
