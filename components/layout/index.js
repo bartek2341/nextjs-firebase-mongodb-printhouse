@@ -14,10 +14,6 @@ const Layout = ({ children }) => {
     <>
       <Head>
         <meta name="description" content={t("common:metaDescription")} />
-        <meta
-          name="google-site-verification"
-          content="T25R_QKlq6sbw6UKPnI8wu8L_UG7M7T9nn6kyn0WO8E"
-        />
       </Head>
       <Nav />
       {isHomePagePage && <Header />}

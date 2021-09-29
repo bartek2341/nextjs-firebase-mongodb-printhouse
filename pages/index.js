@@ -26,6 +26,10 @@ const IndexPage = ({ initProducts, initProductCategories }) => {
     <>
       <Head>
         <title>{t("home:title")}</title>
+        <meta
+          name="google-site-verification"
+          content="T25R_QKlq6sbw6UKPnI8wu8L_UG7M7T9nn6kyn0WO8E"
+        />
       </Head>
       <section>
         <HomeWrapper>
