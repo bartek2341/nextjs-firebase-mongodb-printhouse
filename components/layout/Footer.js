@@ -9,7 +9,6 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <Content>
-        {t("common:websiteNotification")}.{" "}
         <Button
           variant="secondaryLink"
           gray
@@ -35,7 +34,7 @@ const FooterWrapper = styled.footer`
   `}
 `;
 
-const Content = styled.p`
+const Content = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   text-align: center;
