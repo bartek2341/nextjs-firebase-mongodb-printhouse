@@ -132,6 +132,11 @@ from your terminal, then use `stripe login` command to login your stripe account
 ## Payment for orders (Stripe)
 To make successful payment use stripe test card number: __4242424242424242__. Other fields can be filled with random numbers.
 
+## Test account
+email: `paxamo6928@carpetd.com`
+
+password: `jkl987`
+
 ## Dependencies
 `@fortawesome/fontawesome-svg-core`,
 `@fortawesome/free-solid-svg-icons`,
