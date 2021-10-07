@@ -5,7 +5,7 @@ import { companyValidation, isEqualObj } from "@/lib/index";
 import styled from "styled-components";
 import { accountTypes } from "@/data/index";
 
-const CompanyForm = ({ user, onSubmit }) => {
+const CompanyForm = ({ user, onSubmit, setFormType }) => {
   let { t } = useTranslation();
 
   return (

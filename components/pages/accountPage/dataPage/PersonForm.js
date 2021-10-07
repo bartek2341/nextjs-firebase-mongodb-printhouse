@@ -5,7 +5,7 @@ import { personValidation, isEqualObj } from "@/lib/index";
 import styled from "styled-components";
 import { accountTypes } from "@/data/index";
 
-const PersonForm = ({ user, onSubmit }) => {
+const PersonForm = ({ user, onSubmit, setFormType }) => {
   let { t } = useTranslation();
 
   return (

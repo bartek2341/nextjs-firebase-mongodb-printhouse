@@ -25,9 +25,9 @@ const DataPage = ({ user, refetchUser }) => {
 
   const form =
     formType === accountTypes.person ? (
-      <PersonForm user={user} onSubmit={onSubmit} />
+      <PersonForm user={user} onSubmit={onSubmit} setFormType={setFormType} />
     ) : formType === accountTypes.company ? (
-      <CompanyForm user={user} onSubmit={onSubmit} />
+      <CompanyForm user={user} onSubmit={onSubmit} setFormType={setFormType} />
     ) : null;
 
   return (
