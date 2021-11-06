@@ -6,7 +6,7 @@ const basicLimiter = rateLimit({
 });
 
 const orderLimiter = rateLimit({
-  interval: 60 * 1000 * 15, // 15 minutes
+  interval: 60 * 1000 * 5, // 15 minutes
   uniqueTokenPerInterval: 500, // Max 500 users per second
 });
 
@@ -21,7 +21,7 @@ export async function basicRateLimit(req, res, next) {
 
 export async function createOrderLimit(req, res, next) {
   try {
-    await orderLimiter.check(res, 5, "CACHE_TOKEN"); // 5 requests per 15 minutes
+    await orderLimiter.check(res, 10, "CACHE_TOKEN"); // 10 requests per 5 minutes
     next();
   } catch {
     res.status(429).end();
